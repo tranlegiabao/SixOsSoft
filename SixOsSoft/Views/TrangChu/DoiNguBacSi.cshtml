@@ -1,0 +1,289 @@
+@{
+    ViewData["Title"] = "Đội Ngũ Bác Sĩ - Phòng Khám Đa Khoa MINDLAB BẾN TRE";
+}
+
+<section class="breadcrumb-nav">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end">
+                <div class="p-banner-left">
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <!-- Trang chủ -->
+                            <li class="breadcrumb-item py-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/" itemprop="item">
+                                    <span style="color: #6c757d" itemprop="name">Trang chủ</span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <!-- Đối tác -->
+                            <li class="breadcrumb-item active p-2" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <strong style="color: #6c757d;" class="text-contact fw-bold" itemprop="name">Đội ngũ bác sĩ</strong>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bac-si" class="py-4">
+        <div class="container">
+
+            <div class="heading text-center">
+                <h1 class="fw-bold" style="color: #0d8a43;">ĐỘI NGŨ BÁC SĨ & NHÂN SỰ Y TẾ</h1>
+                <p class="text-muted">Phòng Khám Đa Khoa MINDLAB BẾN TRE</p>
+            </div>
+
+            <div class="d-flex justify-content-center flex-wrap gap-2 my-4">
+                <button type="button" class="btn btn-outline-success active btn-dept-filter px-3 py-2 fw-semibold" data-filter="all">Tất cả (12)</button>
+                <button type="button" class="btn btn-outline-success btn-dept-filter px-3 py-2 fw-semibold" data-filter="Nội tổng hợp">Khoa Nội tổng hợp (5)</button>
+                <button type="button" class="btn btn-outline-success btn-dept-filter px-3 py-2 fw-semibold" data-filter="Xét nghiệm">Khoa Xét nghiệm (4)</button>
+                <button type="button" class="btn btn-outline-success btn-dept-filter px-3 py-2 fw-semibold" data-filter="Nhà thuốc">Nhà thuốc (3)</button>
+            </div>
+
+            <div class="row gx-4 gy-3" id="staffContainer">
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nội tổng hợp">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Bác sĩ. CKI Trần Thị Thanh" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Trần Thị Thanh</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Bác sĩ. CKI</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nội tổng hợp</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium">000240/BTR-CCHN</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nội tổng hợp">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Bác sĩ. CKI Trần Thị Mỹ Nhơn" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Trần Thị Mỹ Nhơn</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Bác sĩ. CKI</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nội tổng hợp</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium"><em class="text-warning-emphasis">Đang cập nhật</em></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nội tổng hợp">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Y sĩ đa khoa Nguyễn Anh Thư" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Nguyễn Anh Thư</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Y sĩ đa khoa</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nội tổng hợp</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium"><em class="text-warning-emphasis">Đang cập nhật</em></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nội tổng hợp">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Y sĩ đa khoa Nguyễn Thị Phượng Hằng" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Nguyễn Thị Phượng Hằng</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Y sĩ đa khoa</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nội tổng hợp</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium"><em class="text-warning-emphasis">Đang cập nhật</em></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nội tổng hợp">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Điều dưỡng Trung học Phạm Ngọc Hân" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Phạm Ngọc Hân</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Điều dưỡng Trung học</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nội tổng hợp</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium"><em class="text-warning-emphasis">Đang cập nhật</em></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Xét nghiệm">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Thạc sĩ. Cử nhân Hà Thị Phương Châu" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Hà Thị Phương Châu</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Thạc sĩ. Cử nhân</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Xét nghiệm</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium">000644/BTRE-CCHN</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Xét nghiệm">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Cử nhân Đại học Phạm Ngọc Hân" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Phạm Ngọc Hân</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Cử nhân Đại học</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Xét nghiệm</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium">0005555/BTR-CCHN</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Xét nghiệm">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default1.png" alt="Cử nhân Đại học Lý thành Minh Hiếu" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Lý thành Minh Hiếu</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Cử nhân Đại học</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Xét nghiệm</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium"><em class="text-warning-emphasis">Đang cập nhật</em></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Xét nghiệm">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Cử nhân cao đẳng Nguyễn Thị Kiều Loan" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Nguyễn Thị Kiều Loan</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Cử nhân cao đẳng</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Xét nghiệm</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium">002476/VL-GPN</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nhà thuốc">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Dược sĩ Đại học Cao Thị Mỹ Diệu" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Cao Thị Mỹ Diệu</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Dược sĩ Đại học</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nhà thuốc</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium">59313/BTR-CCHND</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nhà thuốc">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Dược sĩ Cao đẳng Nguyễn Thị Phượng Hằng" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Nguyễn Thị Phượng Hằng</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Dược sĩ Cao đẳng</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nhà thuốc</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium">19519/CCHN-D-SYT-BTR</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-3 staff-item" data-dept="Nhà thuốc">
+                    <div class="row doctor-card g-0 h-100 shadow-sm" style="background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #edf2f7;">
+                        <div class="col-4 d-flex align-items-center justify-content-center" style="background: #f8fafc; padding: 12px;">
+                            <img src="/images/doctor/doctor-default.png" alt="Dược sĩ Cao đẳng Huỳnh Triệu Vy" class="img-fluid" style="max-height: 140px; border-radius: 8px;">
+                        </div>
+                        <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                            <h3 class="doctor-name fw-bold mb-1" style="color: #0d8a43; font-size: 1.15rem;">Huỳnh Triệu Vy</h3>
+                            <span class="badge mb-2 align-self-start" style="background: #e8f5e9; color: #1b5e20; font-size: 0.85rem; font-weight: 600; padding: 5px 10px;">Dược sĩ Cao đẳng</span>
+                            <div class="d-flex align-items-center mb-1">
+                                <img src="/images/icon/icon-3.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 fw-semibold text-secondary" style="font-size: 0.9rem;">Khoa/Phòng: <span class="text-dark">Nhà thuốc</span></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="/images/icon/icon-2.png" style="width: 18px; height: 18px;" />
+                                <p class="m-0 ms-2 text-muted" style="font-size: 0.85rem;">CCHN: <span class="fw-medium"><em class="text-warning-emphasis">Đang cập nhật</em></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

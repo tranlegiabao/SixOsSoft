@@ -1,0 +1,1221 @@
+/* ========================================================
+   GLOBAL MEDICAL TYPOGRAPHY SYSTEM (ROBOTO & MONTSERRAT)
+   ======================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Montserrat:wght@600;700;800;900&display=swap');
+
+:root {
+    --font-main: 'Roboto', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --font-heading: 'Roboto', 'Montserrat', 'Segoe UI', system-ui, sans-serif;
+}
+
+html {
+    font-size: 15px !important;
+    font-family: var(--font-main) !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+body {
+    font-family: var(--font-main) !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    color: #334155 !important;
+}
+
+/* Headings Typography Hierarchy */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-heading) !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.2px !important;
+}
+
+/* Page Primary Banner Title */
+.about-us-title h1.title,
+h1.title {
+    font-size: 32px !important;
+    line-height: 1.3 !important;
+    font-weight: 800 !important;
+    margin-bottom: 14px !important;
+}
+
+/* Section H2 Titles (Về chúng tôi, Liên hệ với chúng tôi, Chuyên khoa, v.v.) */
+h2.title-contact,
+h2.section-title,
+.title-contact,
+.section-title,
+h2.title {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    color: #004d40 !important;
+    margin-bottom: 16px !important;
+}
+
+/* H3 Titles (Card titles, Doctor names, Services) */
+h3, .h3,
+h3.doctor-name,
+.doctor-name {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    color: #006d64 !important;
+    margin-bottom: 6px !important;
+}
+
+/* Paragraphs & General Text */
+p, .paragraph, .about-us-text {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    color: #334155 !important;
+}
+
+/* Navigation Bar Items */
+.styles_navbar__Oape1 > ul .styles_item__7CT7K a,
+.styles_navbar__Oape1 a {
+    font-family: var(--font-main) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.2px !important;
+}
+
+/* Top bar Marquee & Hotline */
+.marquee {
+    font-family: var(--font-main) !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+}
+
+.styles_titleSupport__ndGfi {
+    font-family: var(--font-main) !important;
+    font-size: 12.5px !important;
+    font-weight: 600 !important;
+}
+
+.styles_titleSupport__ndGfi p {
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+/* Breadcrumbs */
+.breadcrumb-item,
+.breadcrumb a,
+.breadcrumb span {
+    font-size: 13.5px !important;
+    font-family: var(--font-main) !important;
+}
+
+/* Doctor card details */
+.doctor-card .badge {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+.doctor-card p {
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+}
+
+/* Form controls (Contact page) */
+.form_lienhe label,
+.form-label {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    margin-bottom: 4px !important;
+}
+
+.form_lienhe input,
+.form_lienhe textarea,
+.form-control {
+    font-size: 14.5px !important;
+    font-family: var(--font-main) !important;
+}
+
+/* Footer Typography */
+.footer-title {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+    margin-bottom: 16px !important;
+}
+
+.footer-links li a,
+.footer-contact-list p,
+.footer-company p {
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+}
+
+/* ========================================================
+   2. HEADER TOP BAR & LOGO (LARGER & BRIGHTER)
+   ======================================================== */
+.menu-destop {
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 77, 64, 0.06) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.menu-destop .menu-destopWrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    max-width: 1400px !important;
+    margin: auto !important;
+    padding: 6px 20px !important;
+    min-height: 88px !important;
+}
+
+.menudestop-box--top {
+    height: 42px !important;
+    padding: 6px 0px 6px 20px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.styles_network__04YkM a {
+    color: #475569 !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: color 0.2s ease !important;
+}
+
+.styles_network__04YkM a:hover {
+    color: var(--primary-color) !important;
+}
+
+.styles_icon__VmeVE {
+    color: var(--primary-color) !important;
+}
+
+.menu-destopLogo {
+    min-width: 340px !important;
+    width: auto !important;
+    padding: 4px 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+.menu-destopLogo a {
+    display: inline-block !important;
+}
+
+#logo {
+    height: 75px !important;
+    max-height: 80px !important;
+    width: auto !important;
+    display: block !important;
+    filter: drop-shadow(0 2px 8px rgba(0, 109, 100, 0.12)) !important;
+    transition: transform 0.25s ease !important;
+}
+
+#logo:hover {
+    transform: scale(1.03) !important;
+}
+
+/* Fix mobile logo */
+.navbar-brand img,
+.offcanvas-header img {
+    height: 54px !important;
+    max-height: 58px !important;
+    width: auto !important;
+}
+
+/* Strict Active vs Non-Active Nav rules */
+.styles_navbar__Oape1 > ul .styles_item__7CT7K a {
+    color: #006d64 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 8px 12px !important;
+    background: transparent !important;
+    border-radius: 8px !important;
+    transition: all 0.25s ease !important;
+    display: inline-block !important;
+}
+
+.styles_navbar__Oape1 > ul .styles_item__7CT7K a:hover {
+    color: #004d40 !important;
+    background: rgba(0, 109, 100, 0.06) !important;
+}
+
+/* Active navigation item: ONLY when .active is present on li or a */
+.styles_navbar__Oape1 > ul li.active .styles_item__7CT7K a,
+.styles_navbar__Oape1 > ul .styles_item__7CT7K a.active,
+.menu-destop .menudestop-box .menudestop-box--bottom .styles_navbar__Oape1 > ul li.active .styles_item__7CT7K a,
+.menu-destop .menudestop-box .menudestop-box--bottom .styles_navbar__Oape1 > ul .styles_item__7CT7K a.active {
+    color: #004d40 !important;
+    font-weight: 800 !important;
+    background: rgba(0, 109, 100, 0.1) !important;
+    box-shadow: 0 1px 4px rgba(0, 109, 100, 0.1) !important;
+}
+
+/* Force non-active items to NEVER have background or bold */
+.styles_navbar__Oape1 > ul li:not(.active) .styles_item__7CT7K a:not(.active),
+.menu-destop .menudestop-box .menudestop-box--bottom .styles_navbar__Oape1 > ul li:not(.active) .styles_item__7CT7K a:not(.active) {
+    color: #006d64 !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* "Liên hệ" Pill Button */
+.styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a,
+.styles_navbar__Oape1 > ul a[href="lien-he.html"],
+.styles_navbar__Oape1 > ul a[href="/lien-he"],
+.mobile--nav a.nav-link[href="lien-he.html"],
+.mobile--nav a.nav-link[href="/lien-he"] {
+    background: linear-gradient(135deg, #00796b 0%, #004d40 100%) !important;
+    color: #ffffff !important;
+    border-radius: var(--radius-full) !important;
+    padding: 9px 24px !important;
+    font-weight: 600 !important;
+    font-size: 15.5px !important;
+    box-shadow: 0 4px 14px rgba(0, 109, 100, 0.3) !important;
+    transition: all 0.25s ease !important;
+    text-align: center !important;
+}
+
+.styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a:hover,
+.styles_navbar__Oape1 > ul a[href="lien-he.html"]:hover,
+.styles_navbar__Oape1 > ul a[href="/lien-he"]:hover {
+    background: linear-gradient(135deg, #006056 0%, #00362c 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(0, 109, 100, 0.45) !important;
+}
+
+/* ========================================================
+   4. HERO BANNER & SLIDER MODERNIZATION
+   ======================================================== */
+#fullscreenCarousel {
+    border-radius: var(--radius-lg) !important;
+    overflow: hidden !important;
+    box-shadow: 0 20px 45px -15px rgba(0, 109, 100, 0.15) !important;
+    border: 1px solid rgba(0, 109, 100, 0.08) !important;
+}
+
+#fullscreenCarousel .carousel-item img {
+    border-radius: var(--radius-lg) !important;
+    object-fit: cover !important;
+    max-height: 440px !important;
+    width: 100% !important;
+}
+
+#fullscreenCarousel .carousel-controls button {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(0, 109, 100, 0.15) !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    opacity: 0.9 !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+#fullscreenCarousel .carousel-controls button:hover {
+    background: #006d64 !important;
+    opacity: 1 !important;
+    transform: translateY(-50%) scale(1.08) !important;
+}
+
+#fullscreenCarousel .carousel-controls button:hover span {
+    filter: invert(1) !important;
+}
+
+/* Right side highlight box under hero */
+.col-12.col-lg-5 .card,
+.col-lg-5 .card {
+    border-radius: var(--radius-lg) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: var(--card-shadow) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* ========================================================
+   5. QUICK ACTION CARDS (UNDER BANNER)
+   ======================================================== */
+.action-card,
+.feature-card,
+.service-summary-card {
+    background: #ffffff !important;
+    border-radius: var(--radius-md) !important;
+    padding: 22px 18px !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: var(--card-shadow) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.action-card:hover,
+.feature-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: var(--card-shadow-hover) !important;
+    border-color: rgba(0, 109, 100, 0.25) !important;
+}
+
+/* ========================================================
+   6. "VỀ PHÒNG KHÁM ĐA KHOA MINDLAB BẾN TRE" SECTION
+   ======================================================== */
+.section-title {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: var(--primary-dark) !important;
+    letter-spacing: -0.5px !important;
+    margin-bottom: 12px !important;
+}
+
+.section-subtitle {
+    font-size: 15px !important;
+    color: var(--text-muted) !important;
+    line-height: 1.6 !important;
+}
+
+/* Modern Checkmark List Items */
+.list-item--TrangChu li,
+.about-features li,
+main ul.list-unstyled li {
+    background: #ffffff !important;
+    border-radius: var(--radius-sm) !important;
+    padding: 12px 18px !important;
+    margin-bottom: 10px !important;
+    border: 1px solid #f1f5f9 !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
+    border-left: 4px solid var(--primary-color) !important;
+    font-size: 14.5px !important;
+    font-weight: 500 !important;
+    color: #334155 !important;
+    transition: all 0.25s ease !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.list-item--TrangChu li:hover,
+.about-features li:hover {
+    transform: translateX(5px) !important;
+    border-left-color: #00a896 !important;
+    box-shadow: 0 4px 12px rgba(0, 109, 100, 0.08) !important;
+}
+
+.list-item--TrangChu li .check,
+.about-features li svg {
+    margin-right: 12px !important;
+    color: var(--primary-color) !important;
+    flex-shrink: 0 !important;
+}
+
+/* ========================================================
+   7. "DỊCH VỤ TẠI MINDLAB BẾN TRE" (5 MODERN CARDS)
+   ======================================================== */
+#services,
+.services-section {
+    padding: 60px 0 !important;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
+}
+
+/* Center and style service cards */
+#services .row,
+.services-section .row {
+    justify-content: center !important;
+}
+
+#services .col-12,
+#services .col-sm-6,
+#services .col-md-4,
+#services .col-lg-3 {
+    margin-bottom: 24px !important;
+}
+
+#services a,
+#services .service-card,
+.service-item-card {
+    display: block !important;
+    background: #ffffff !important;
+    border-radius: var(--radius-lg) !important;
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: var(--card-shadow) !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-decoration: none !important;
+    position: relative !important;
+}
+
+#services a:hover,
+#services .service-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 22px 40px -10px rgba(0, 109, 100, 0.2) !important;
+    border-color: rgba(0, 109, 100, 0.3) !important;
+}
+
+#services a img,
+#services .service-card img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+#services a:hover img,
+#services .service-card:hover img {
+    transform: scale(1.08) !important;
+}
+
+/* Service Title Overlay / Footer Card */
+#services a span,
+#services a p,
+#services .service-card .service-title {
+    display: block !important;
+    background: linear-gradient(180deg, rgba(0, 77, 64, 0.85) 0%, rgba(0, 54, 45, 0.95) 100%) !important;
+    backdrop-filter: blur(4px) !important;
+    color: #ffffff !important;
+    padding: 14px 16px !important;
+    font-size: 14.5px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    letter-spacing: 0.3px !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    transition: background 0.3s ease !important;
+}
+
+#services a:hover span,
+#services .service-card:hover .service-title {
+    background: linear-gradient(180deg, rgba(0, 109, 100, 0.95) 0%, rgba(0, 77, 64, 1) 100%) !important;
+}
+
+/* ========================================================
+   8. DOCTOR ROSTER CARDS & TABS
+   ======================================================== */
+.doctor-card {
+    background: #ffffff !important;
+    border-radius: var(--radius-lg) !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: var(--card-shadow) !important;
+    overflow: hidden !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    height: 100% !important;
+}
+
+.doctor-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: var(--card-shadow-hover) !important;
+    border-color: rgba(0, 109, 100, 0.3) !important;
+}
+
+.doctor-img-wrap {
+    height: 220px !important;
+    overflow: hidden !important;
+    background: #f1f5f9 !important;
+    position: relative !important;
+}
+
+.doctor-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.4s ease !important;
+}
+
+.doctor-card:hover .doctor-img-wrap img {
+    transform: scale(1.05) !important;
+}
+
+.doctor-card .col-4 {
+    background: #eef2f6 !important;
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%) !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    min-height: 145px !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    border-right: 1px solid #edf2f7 !important;
+}
+
+.doctor-card .col-4 img,
+.doctor-card .col-4 img.img-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 145px !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: bottom center !important;
+    display: block !important;
+    margin: 0 auto !important;
+    transform: scale(1.08) !important;
+    transform-origin: bottom center !important;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08)) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.doctor-card:hover .col-4 img {
+    transform: scale(1.14) !important;
+}
+
+.doctor-card .col-8 img,
+.doctor-card .col-8 .d-flex img {
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+    filter: none !important;
+}
+
+.doctor-info {
+    padding: 18px !important;
+}
+
+.doctor-dept-badge {
+    display: inline-block !important;
+    background: var(--primary-soft) !important;
+    color: var(--primary-color) !important;
+    padding: 4px 10px !important;
+    border-radius: var(--radius-full) !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+}
+
+.doctor-name {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 4px !important;
+}
+
+.doctor-title {
+    font-size: 13.5px !important;
+    color: #475569 !important;
+    font-weight: 500 !important;
+    margin-bottom: 8px !important;
+}
+
+.doctor-cchn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    font-size: 12px !important;
+    background: #f8fafc !important;
+    color: #0284c7 !important;
+    padding: 4px 8px !important;
+    border-radius: 6px !important;
+    border: 1px solid #e0f2fe !important;
+    font-weight: 600 !important;
+}
+
+/* Filter buttons for doctors */
+.dept-filter-btn {
+    border-radius: var(--radius-full) !important;
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border: 1px solid #cbd5e1 !important;
+    background: #ffffff !important;
+    color: #475569 !important;
+    transition: all 0.25s ease !important;
+    margin: 4px !important;
+}
+
+.dept-filter-btn:hover {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.dept-filter-btn.active {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 4px 12px rgba(0, 109, 100, 0.25) !important;
+}
+
+/* ========================================================
+   9. APPOINTMENT BOOKING CTA CARD
+   ======================================================== */
+.booking-cta-section {
+    background: linear-gradient(135deg, #004d40 0%, #006d64 50%, #004d40 100%) !important;
+    color: #ffffff !important;
+    border-radius: var(--radius-lg) !important;
+    padding: 45px 35px !important;
+    box-shadow: 0 20px 40px rgba(0, 77, 64, 0.25) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.booking-cta-section .form-control,
+.booking-cta-section .form-select {
+    border-radius: var(--radius-sm) !important;
+    padding: 12px 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    font-size: 14.5px !important;
+    background: #ffffff !important;
+    color: #1e293b !important;
+}
+
+.btn-book-submit {
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    padding: 12px 28px !important;
+    border-radius: var(--radius-full) !important;
+    border: none !important;
+    box-shadow: 0 6px 18px rgba(245, 124, 0, 0.35) !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+}
+
+.btn-book-submit:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 22px rgba(245, 124, 0, 0.45) !important;
+    background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%) !important;
+}
+
+/* ========================================================
+   10. FOOTER ELEVATION
+   ======================================================== */
+.custom-footer {
+    background: linear-gradient(180deg, #003630 0%, #00231f 100%) !important;
+    color: #e2e8f0 !important;
+    position: relative !important;
+}
+
+.custom-footer::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 4px !important;
+    background: linear-gradient(90deg, #00897b, #26a69a, #00897b) !important;
+}
+
+.footer-title {
+    color: #ffffff !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    position: relative !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 18px !important;
+    letter-spacing: -0.2px !important;
+}
+
+.footer-title::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 38px !important;
+    height: 3px !important;
+    background: #26a69a !important;
+    border-radius: 2px !important;
+}
+
+.footer-links li a {
+    color: #cbd5e1 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    transition: all 0.2s ease !important;
+    display: inline-block !important;
+    padding: 3px 0 !important;
+}
+
+.footer-links li a:hover {
+    color: #5eead4 !important;
+    transform: translateX(4px) !important;
+}
+
+.footer-logo-card {
+    background: #ffffff !important;
+    padding: 10px 18px !important;
+    border-radius: 12px !important;
+    display: inline-block !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 15px !important;
+}
+
+.footer-logo-card img {
+    height: 48px !important;
+    width: auto !important;
+    display: block !important;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 20px 0 !important;
+    font-size: 13.5px !important;
+    color: #94a3b8 !important;
+}
+
+/* ========================================================
+   11. FLOATING ACTION BUTTONS
+   ======================================================== */
+.floating-contact-wrap {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.float-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    padding: 10px 18px;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+}
+
+.float-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.float-btn-booking {
+    background: linear-gradient(135deg, #0d8a43, #09612f);
+    color: #fff !important;
+}
+
+.float-btn-phone {
+    background: linear-gradient(135deg, #e53935, #c62828);
+    color: #fff !important;
+}
+
+.float-btn-phone svg {
+    margin-right: 6px;
+    animation: phoneShake 1.8s infinite ease-in-out;
+}
+
+@keyframes phoneShake {
+    0%, 100% { transform: rotate(0deg); }
+    10%, 30% { transform: rotate(-15deg); }
+    20%, 40% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+}
+
+.float-btn-zalo {
+    background: #0068ff;
+    color: #fff !important;
+}
+
+.float-btn-zalo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    object-fit: contain;
+}
+
+.float-btn-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    background: #334155;
+    color: #fff !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.float-btn-top.show {
+    opacity: 0.9;
+    visibility: visible;
+}
+
+.float-btn-top:hover {
+    opacity: 1;
+    background: #0f172a;
+}
+
+/* ========================================================
+   12. RESPONSIVE REFINEMENTS
+   ======================================================== */
+@media (max-width: 991px) {
+    .menu-destop {
+        display: none !important;
+    }
+    .mobile--nav {
+        display: block !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .floating-contact-wrap {
+        bottom: 15px;
+        right: 15px;
+        gap: 8px;
+    }
+    .float-btn span {
+        display: none;
+    }
+    .float-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        padding: 0;
+        justify-content: center;
+    }
+    .float-btn svg, .float-btn img {
+        margin: 0 !important;
+    }
+}
+
+
+/* ========================================================
+   HORIZONTAL LAYOUT FIXES (FOR ALL TEXTS & HEADERS)
+   ======================================================== */
+
+/* 1. Header Top Bar: Strictly 1 Horizontal Line Side-by-Side */
+.menu-destop .menudestop-box .menudestop-box--top,
+.menudestop-box--top {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 32px !important;
+    height: 42px !important;
+    padding: 0 15px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+}
+
+.menudestop-box--top .styles_network__04YkM {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+.menudestop-box--top .styles_network__04YkM a {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+    white-space: nowrap !important;
+    font-size: 13.5px !important;
+    color: #475569 !important;
+}
+
+.menudestop-box--top .styles_network__04YkM a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* 2. Subpage Heading & Tagline: Horizontal Layout */
+.heading {
+    text-align: center !important;
+    margin: 32px 0 24px 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: baseline !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+}
+
+.heading h1 {
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    color: var(--primary-color) !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    letter-spacing: -0.3px !important;
+}
+
+.heading span {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #c8102e !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    font-style: italic !important;
+}
+
+.primary2 {
+    color: #c8102e !important;
+    font-weight: 800 !important;
+}
+
+.heading span::before {
+    content: "– " !important;
+    color: #94a3b8 !important;
+    margin-right: 4px !important;
+    font-style: normal !important;
+}
+
+/* 3. Breadcrumb Nav: Horizontal */
+.breadcrumb {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+}
+
+.breadcrumb-item {
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+}
+
+/* 4. Footer Contact List: Horizontal labels and values */
+.footer-contact-list p {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    margin-bottom: 8px !important;
+}
+
+.footer-contact-list strong {
+    white-space: nowrap !important;
+}
+
+
+/* ========================================================
+   CRITICAL FIX: PREVENT MENU TEXT FROM WRAPPING / BREAKING DOWN A LINE
+   "Trang chủ", "Giới thiệu", "Chuyên khoa", "Đội ngũ bác sĩ", "Dịch vụ", "Tin tức", "Liên hệ"
+   MUST ALWAYS BE ON ONE SINGLE HORIZONTAL LINE!
+   ======================================================== */
+
+/* Hide the duplicate Hotline inside bottom menu bar to give 100% width to the navigation */
+.menu-destop .menudestop-box .menudestop-box--bottom .styles_support__q04E_,
+.menudestop-box--bottom .styles_support__q04E_ {
+    display: none !important;
+}
+
+.menu-destop .menudestop-box,
+.menudestop-box {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.menu-destop .menudestop-box--bottom,
+.menudestop-box--bottom {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    padding: 8px 0 !important;
+}
+
+.menu-destop .styles_navbar__Oape1,
+.styles_navbar__Oape1 {
+    width: 100% !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul,
+.styles_navbar__Oape1 > ul {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex-wrap: nowrap !important;
+    gap: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    white-space: nowrap !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul li,
+.styles_navbar__Oape1 > ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K,
+.styles_navbar__Oape1 > ul .styles_item__7CT7K {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* Force each text link to be strictly on 1 line (NO LINE BREAK) */
+.menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K a,
+.styles_navbar__Oape1 > ul .styles_item__7CT7K a {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    text-overflow: clip !important;
+    display: inline-block !important;
+    color: #006d64 !important;
+    font-size: 15.5px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    padding: 8px 12px !important;
+    background: transparent !important;
+    border-radius: 8px !important;
+    line-height: 1.2 !important;
+    transition: all 0.2s ease !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K a:hover,
+.styles_navbar__Oape1 > ul .styles_item__7CT7K a:hover {
+    color: #004d40 !important;
+    background: rgba(0, 109, 100, 0.06) !important;
+}
+
+/* Active navigation item */
+.menu-destop .styles_navbar__Oape1 > ul li.active .styles_item__7CT7K a:not([href="lien-he.html"]):not([href="/lien-he"]),
+.styles_navbar__Oape1 > ul li.active .styles_item__7CT7K a:not([href="lien-he.html"]):not([href="/lien-he"]),
+.menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K a.active:not([href="lien-he.html"]):not([href="/lien-he"]),
+.styles_navbar__Oape1 > ul .styles_item__7CT7K a.active:not([href="lien-he.html"]):not([href="/lien-he"]) {
+    color: #004d40 !important;
+    font-weight: 800 !important;
+    background: rgba(0, 109, 100, 0.1) !important;
+    border-radius: 8px !important;
+    white-space: nowrap !important;
+}
+
+/* Non-active menu items must NEVER have background or bold */
+.menu-destop .styles_navbar__Oape1 > ul li:not(.active) .styles_item__7CT7K a:not(.active):not([href="lien-he.html"]):not([href="/lien-he"]),
+.styles_navbar__Oape1 > ul li:not(.active) .styles_item__7CT7K a:not(.active):not([href="lien-he.html"]):not([href="/lien-he"]) {
+    color: #006d64 !important;
+    font-weight: 600 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    white-space: nowrap !important;
+}
+
+/* Solid Teal Pill Button for "Liên hệ" */
+.menu-destop .styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a,
+.styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a,
+.styles_navbar__Oape1 > ul a[href="lien-he.html"],
+.styles_navbar__Oape1 > ul a[href="/lien-he"],
+.styles_navbar__Oape1 a[href="lien-he.html"],
+.styles_navbar__Oape1 a[href="/lien-he"] {
+    background-color: #006d64 !important;
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    padding: 9px 24px !important;
+    font-weight: 700 !important;
+    font-size: 15.5px !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    box-shadow: 0 4px 12px rgba(0, 109, 100, 0.28) !important;
+    transition: all 0.25s ease !important;
+    text-align: center !important;
+    display: inline-block !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a:hover,
+.styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a:hover,
+.styles_navbar__Oape1 > ul a[href="lien-he.html"]:hover,
+.styles_navbar__Oape1 > ul a[href="/lien-he"]:hover {
+    background-color: #004d40 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0, 109, 100, 0.4) !important;
+}
+
+/* Responsive adjustment for laptop screens (1000px - 1280px) */
+@media (max-width: 1280px) and (min-width: 992px) {
+    .menu-destop .styles_navbar__Oape1 > ul,
+    .styles_navbar__Oape1 > ul {
+        gap: 10px !important;
+    }
+    .menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K a,
+    .styles_navbar__Oape1 > ul .styles_item__7CT7K a {
+        font-size: 14px !important;
+        padding: 6px 8px !important;
+    }
+    .menu-destop .styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a,
+    .styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a {
+        padding: 7px 18px !important;
+        font-size: 14px !important;
+    }
+}
+
+
+/* ========================================================
+   ULTRA-SPECIFICITY OVERRIDE: SOLID TEAL PILL BUTTON FOR "LIÊN HỆ"
+   ======================================================== */
+html body header .menu-destop .menudestop-box .menudestop-box--bottom .styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a,
+html body header .menu-destop .menudestop-box .menudestop-box--bottom .styles_navbar__Oape1 > ul a[href*="lien-he"],
+html body header .menu-destop .menudestop-box--bottom .styles_navbar__Oape1 > ul .styles_item__7CT7K a[href*="lien-he"],
+html body .styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a,
+html body .styles_navbar__Oape1 a[href*="lien-he"],
+html body .mobile--nav a.nav-link[href*="lien-he"] {
+    background: #006d64 !important;
+    background-color: #006d64 !important;
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    padding: 9px 24px !important;
+    font-weight: 700 !important;
+    font-size: 15.5px !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    box-shadow: 0 4px 12px rgba(0, 109, 100, 0.28) !important;
+    transition: all 0.25s ease !important;
+    text-align: center !important;
+    display: inline-block !important;
+}
+
+html body header .menu-destop .menudestop-box .menudestop-box--bottom .styles_navbar__Oape1 > ul li:last-child .styles_item__7CT7K a:hover,
+html body header .menu-destop .menudestop-box--bottom .styles_navbar__Oape1 > ul .styles_item__7CT7K a[href*="lien-he"]:hover,
+html body .styles_navbar__Oape1 a[href*="lien-he"]:hover {
+    background: #004d40 !important;
+    background-color: #004d40 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0, 109, 100, 0.4) !important;
+}
+
+/* ========================================================
+   ELIMINATE BLANK GAP BETWEEN HEADER AND BANNER / CONTENT
+   ======================================================== */
+main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#banner,
+.carousel.slide#banner,
+#fullscreenCarousel,
+section#banner {
+    margin-top: 0 !important;
+    padding-top: 15px !important;
+}
+
+.breadcrumb-nav {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+}
+
