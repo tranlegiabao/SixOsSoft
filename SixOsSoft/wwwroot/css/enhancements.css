@@ -32,13 +32,15 @@ h1, h2, h3, h4, h5, h6,
     letter-spacing: -0.2px !important;
 }
 
-/* Page Primary Banner Title */
+/* Page Primary Banner Title - Small & compact per user request */
 .about-us-title h1.title,
-h1.title {
-    font-size: 32px !important;
-    line-height: 1.3 !important;
+.about-us-title h1.hero-brand-title,
+h1.hero-brand-title {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
     font-weight: 800 !important;
-    margin-bottom: 14px !important;
+    margin-bottom: 10px !important;
+    letter-spacing: 0.5px !important;
 }
 
 /* Section H2 Titles (Về chúng tôi, Liên hệ với chúng tôi, Chuyên khoa, v.v.) */
@@ -685,11 +687,11 @@ main ul.list-unstyled li {
 }
 
 /* ========================================================
-   10. FOOTER ELEVATION
+   10. FOOTER ELEVATION (LIGHTER BRIGHTER TEAL & CRISP READABLE TEXT)
    ======================================================== */
 .custom-footer {
-    background: linear-gradient(180deg, #003630 0%, #00231f 100%) !important;
-    color: #e2e8f0 !important;
+    background: linear-gradient(135deg, #00877a 0%, #006d62 100%) !important;
+    color: #ffffff !important;
     position: relative !important;
 }
 
@@ -700,17 +702,48 @@ main ul.list-unstyled li {
     left: 0 !important;
     right: 0 !important;
     height: 4px !important;
-    background: linear-gradient(90deg, #00897b, #26a69a, #00897b) !important;
+    background: linear-gradient(90deg, #26a69a, #80cbc4, #26a69a) !important;
+}
+
+/* All text in footer company, address, contact list must be bright white and high contrast */
+.footer-company p,
+.footer-company address,
+.footer-company address p,
+.footer-company span,
+.footer-contact-list p,
+.footer-contact-list p strong,
+.footer-contact-list p a,
+.footer-contact-list p time,
+.newsletter-form p,
+section[aria-labelledby="newsletter-title"] p,
+.footer-company p,
+.footer-company strong {
+    color: #ffffff !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) !important;
+}
+
+.footer-contact-list p strong,
+.footer-company strong {
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+.footer-contact-list p a:hover {
+    color: #b2dfdb !important;
+    text-decoration: underline !important;
 }
 
 .footer-title {
     color: #ffffff !important;
-    font-size: 17px !important;
+    font-size: 18px !important;
     font-weight: 700 !important;
     position: relative !important;
     padding-bottom: 12px !important;
     margin-bottom: 18px !important;
     letter-spacing: -0.2px !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 .footer-title::after {
@@ -720,44 +753,121 @@ main ul.list-unstyled li {
     left: 0 !important;
     width: 38px !important;
     height: 3px !important;
-    background: #26a69a !important;
+    background: #80cbc4 !important;
     border-radius: 2px !important;
 }
 
+.footer-links {
+    padding-left: 0 !important;
+    list-style: none !important;
+}
+
+.footer-links li {
+    margin-bottom: 10px !important;
+}
+
 .footer-links li a {
-    color: #cbd5e1 !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
     text-decoration: none !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
     transition: all 0.2s ease !important;
     display: inline-block !important;
-    padding: 3px 0 !important;
+    padding: 2px 0 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) !important;
 }
 
 .footer-links li a:hover {
-    color: #5eead4 !important;
+    color: #b2dfdb !important;
     transform: translateX(4px) !important;
 }
 
-.footer-logo-card {
+
+
+.newsletter-input {
     background: #ffffff !important;
-    padding: 10px 18px !important;
-    border-radius: 12px !important;
-    display: inline-block !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
-    margin-bottom: 15px !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #1e293b !important;
+    font-size: 14.5px !important;
+    border-radius: 6px 0 0 6px !important;
+    padding: 10px 14px !important;
 }
 
-.footer-logo-card img {
-    height: 48px !important;
-    width: auto !important;
-    display: block !important;
+.newsletter-input::placeholder {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
+
+.newsletter-input:focus {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border-color: #00897b !important;
+    box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.25) !important;
+}
+
+.btn-subscribe {
+    background: #f59e0b !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    border: none !important;
+    border-radius: 0 6px 6px 0 !important;
+    padding: 10px 20px !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-subscribe:hover {
+    background: #d97706 !important;
+    color: #ffffff !important;
+}
+
+.social-links {
+    margin-top: 18px !important;
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
+
+.social-links a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.2s ease !important;
+    padding: 6px !important;
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+.social-links a img {
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain !important;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-    padding: 20px 0 !important;
-    font-size: 13.5px !important;
-    color: #94a3b8 !important;
+    background: rgba(0, 0, 0, 0.12) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding: 18px 0 !important;
+    font-size: 14px !important;
+    color: #ffffff !important;
+}
+
+.footer-bottom p {
+    color: #ffffff !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+}
+
+.footer-bottom a {
+    color: #b2dfdb !important;
+    font-weight: 600 !important;
 }
 
 /* ========================================================
@@ -1217,5 +1327,1002 @@ section#banner {
 .breadcrumb-nav {
     margin-top: 0 !important;
     padding-top: 10px !important;
+}
+
+
+
+/* ========================================================
+   WHY CHOOSE US - HOTLINE BOX (BRIGHT, PROMINENT & HIGH CONTRAST)
+   ======================================================== */
+.why-right .why-contact,
+.why-contact {
+    background: linear-gradient(135deg, #00877a 0%, #006d62 100%) !important;
+    border-radius: 16px !important;
+    padding: 20px 35px 20px 25px !important;
+    box-shadow: 0 12px 30px rgba(0, 109, 98, 0.35) !important;
+    border: 2px solid rgba(255, 255, 255, 0.25) !important;
+    display: flex !important;
+    align-items: center !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.why-right .why-contact:hover,
+.why-contact:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 16px 36px rgba(0, 109, 98, 0.45) !important;
+}
+
+.why-right .why-contact img,
+.why-contact img {
+    width: 54px !important;
+    height: 54px !important;
+    margin-right: 18px !important;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2)) !important;
+}
+
+.why-right .why-contact h3,
+.why-contact h3 {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin: 0 0 4px 0 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+}
+
+.why-right .why-contact p,
+.why-contact p,
+.why-right .why-contact p a,
+.why-contact p a,
+.why-right .why-contact a,
+.why-contact a {
+    color: #ffffff !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    letter-spacing: 0.5px !important;
+    display: inline-block !important;
+}
+
+.why-right .why-contact p a:hover,
+.why-contact p a:hover {
+    color: #b2dfdb !important;
+    text-decoration: none !important;
+}
+
+
+.footer-logo {
+    text-align: left !important;
+    margin-bottom: 15px !important;
+}
+
+.footer-logo-card {
+    background: #ffffff !important;
+    padding: 12px 24px !important;
+    border-radius: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+    margin: 0 0 15px 0 !important;
+    overflow: hidden !important;
+}
+
+.footer-logo-card img,
+.footer-logo img {
+    height: 48px !important;
+    max-height: 48px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    object-fit: contain !important;
+    transform: none !important;
+}
+
+
+/* ========================================================
+   LOGO STYLING (NEW MINDLAB BẾN TRE OFFICIAL LOGO)
+   ======================================================== */
+.menu-destopLogo img,
+#logo {
+    height: 70px !important;
+    max-height: 75px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+.footer-logo-card {
+    background: #ffffff !important;
+    padding: 10px 22px !important;
+    border-radius: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+    margin: 0 0 15px 0 !important;
+    overflow: hidden !important;
+}
+
+.footer-logo-card img,
+.footer-logo img {
+    height: 55px !important;
+    max-height: 58px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    object-fit: contain !important;
+    transform: none !important;
+}
+
+
+/* Responsive adjustment for two phone numbers */
+.why-right .why-contact p,
+.why-contact p,
+.why-right .why-contact a,
+.why-contact a {
+    font-size: 19px !important;
+    white-space: nowrap !important;
+}
+
+.styles_titleSupport__ndGfi p {
+    font-size: 14px !important;
+    white-space: nowrap !important;
+}
+
+
+
+
+
+
+/* ========================================================
+   HORIZONTAL BIG UPPERCASE CLINIC TITLE IN HEADER (32PX EXTRA BOLD)
+   ======================================================== */
+.menu-destop .menu-destopWrapper {
+    max-width: 100% !important;
+    padding: 6px 36px !important;
+}
+
+.menu-destopLogo {
+    min-width: unset !important;
+    width: auto !important;
+    padding: 2px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.menu-destopLogo a.brand-header-link {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    gap: 18px !important;
+}
+
+.menu-destopLogo a.brand-header-link:hover {
+    text-decoration: none !important;
+}
+
+.menu-destopLogo img,
+#logo {
+    height: 74px !important;
+    max-height: 78px !important;
+    width: auto !important;
+    display: block !important;
+    filter: drop-shadow(0 2px 8px rgba(0, 109, 100, 0.12)) !important;
+    transition: transform 0.25s ease !important;
+}
+
+.menu-destopLogo a:hover img {
+    transform: scale(1.03) !important;
+}
+
+.brand-header-text {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    text-align: left !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.brand-title-horizontal {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    font-family: var(--font-title, 'Montserrat', sans-serif) !important;
+    font-size: 32px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+}
+
+.brand-title-horizontal .brand-coso {
+    color: #007673 !important;
+    font-weight: 900 !important;
+}
+
+.brand-title-horizontal .brand-mindlab {
+    color: #007673 !important;
+    font-weight: 900 !important;
+}
+
+.brand-title-horizontal .brand-bentre {
+    color: #c0392b !important;
+    font-weight: 900 !important;
+}
+
+@media (max-width: 1550px) {
+    .brand-title-horizontal {
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 1350px) {
+    .brand-title-horizontal {
+        font-size: 24px !important;
+    }
+    .menu-destop .menu-destopWrapper {
+        padding: 6px 20px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .brand-title-horizontal {
+        font-size: 20px !important;
+    }
+}
+
+
+/* ========================================================
+   COMPREHENSIVE UI/UX AESTHETIC ELEVATION (MINDLAB BẾN TRE)
+   ======================================================== */
+
+/* 1. Global Reset & Overflow Protection */
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    scroll-behavior: smooth;
+    color: #334155 !important;
+    background-color: #ffffff;
+}
+
+/* 2. Top Marquee */
+.marquee-container {
+    background: #007673 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding: 6px 0 !important;
+}
+
+.marquee {
+    color: #ffffff !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+}
+
+/* 3. Header Top Bar */
+.menudestop-box--top {
+    height: 44px !important;
+    padding: 6px 0px 6px 20px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 24px !important;
+}
+
+.styles_network__04YkM a {
+    color: #475569 !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.styles_network__04YkM a:hover {
+    color: #007673 !important;
+}
+
+.styles_icon__VmeVE {
+    color: #007673 !important;
+}
+
+/* 4. Desktop Navigation Bar */
+.menu-destop {
+    box-shadow: 0 4px 20px rgba(0, 77, 64, 0.06) !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K a {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K a:hover {
+    color: #007673 !important;
+    background: #f0fdf9 !important;
+}
+
+.menu-destop .styles_navbar__Oape1 > ul li.active .styles_item__7CT7K a,
+.menu-destop .styles_navbar__Oape1 > ul .styles_item__7CT7K a.active {
+    color: #007673 !important;
+    font-weight: 700 !important;
+}
+
+/* 5. Banner Carousel */
+#fullscreenCarousel {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08) !important;
+}
+
+#fullscreenCarousel img {
+    border-radius: 18px !important;
+    object-fit: cover !important;
+    height: 480px !important;
+    width: 100% !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 44px !important;
+    height: 44px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(4px) !important;
+    border-radius: 50% !important;
+    opacity: 0.85 !important;
+    margin: 0 14px !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: #007673 !important;
+    opacity: 1 !important;
+    transform: translateY(-50%) scale(1.08) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(30%) sepia(80%) saturate(1500%) hue-rotate(140deg) !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    filter: brightness(0) invert(1) !important;
+}
+
+
+/* 6. Hero Right Column (Clean Medical Highlights - No Checkmarks & High-Contrast Buttons) */
+.hero-info-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    margin-top: 16px !important;
+    margin-bottom: 24px !important;
+}
+
+.hero-info-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #334155 !important;
+}
+
+.hero-info-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background-color: #007673 !important;
+    margin-top: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.hero-info-text {
+    flex: 1 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #334155 !important;
+}
+
+.hero-info-text strong {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+
+/* High Contrast CTA Buttons */
+a.btn-hero-primary,
+.btn-hero-primary,
+a.btn-hero-primary *,
+.btn-hero-primary * {
+    background-color: #007673 !important;
+    color: #ffffff !important;
+    border-color: #007673 !important;
+}
+
+a.btn-hero-primary:hover,
+.btn-hero-primary:hover {
+    background-color: #005f5d !important;
+    border-color: #005f5d !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 118, 115, 0.4) !important;
+}
+
+a.btn-hero-secondary,
+.btn-hero-secondary {
+    background-color: #ffffff !important;
+    color: #007673 !important;
+    border: 2px solid #007673 !important;
+}
+
+a.btn-hero-secondary *,
+.btn-hero-secondary * {
+    color: #007673 !important;
+}
+
+a.btn-hero-secondary:hover,
+.btn-hero-secondary:hover {
+    background-color: #f0fdf9 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 118, 115, 0.15) !important;
+}
+
+/* 7. About Us Section Elevation */
+.about-subtitle-badge {
+    display: inline-block !important;
+    background: #e6f4ea !important;
+    color: #007673 !important;
+    padding: 5px 16px !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Working hours card in About Us (replaces magenta box) */
+.about-us-time-card {
+    background: linear-gradient(135deg, #007673 0%, #005a57 100%) !important;
+    color: #ffffff !important;
+    border-radius: 14px !important;
+    padding: 18px 24px !important;
+    box-shadow: 0 8px 24px rgba(0, 118, 115, 0.25) !important;
+    display: inline-flex !important;
+    flex-direction: column !important;
+    margin-top: 15px !important;
+}
+
+.about-us-time-card .time-label {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    color: #b2dfdb !important;
+    margin-bottom: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.about-us-time-card .time-val {
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    font-family: var(--font-title, 'Montserrat', sans-serif) !important;
+}
+
+.about-us-time-card .time-sub {
+    font-size: 13px !important;
+    color: #e0f2f1 !important;
+    margin-top: 4px !important;
+    font-weight: 500 !important;
+}
+
+/* Clean rounded photos for About Us */
+.about-us-img {
+    margin: 0 !important;
+    animation: none !important;
+    display: flex !important;
+    gap: 16px !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.about-us-img figure {
+    margin: 0 !important;
+    position: static !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.about-us-img figure:hover {
+    transform: translateY(-5px) !important;
+}
+
+.about-us-img figure img {
+    border-radius: 16px !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* 8. Services Section (Fix contrast failure) */
+.service-content {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+    background: #ffffff !important;
+    border: 1px solid #edf2f7 !important;
+}
+
+.service-content:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 18px 40px rgba(0, 118, 115, 0.2) !important;
+}
+
+.service-img {
+    position: relative !important;
+    margin: 0 !important;
+    border-radius: 18px 18px 0 0 !important;
+    overflow: hidden !important;
+    height: 280px !important;
+}
+
+.service-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 18px 18px 0 0 !important;
+    transition: transform 0.5s ease !important;
+}
+
+.service-content:hover .service-img img {
+    transform: scale(1.06) !important;
+}
+
+.service-img p,
+.service-content .service-img p {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 60, 50, 0.94) 100%) !important;
+    color: #ffffff !important;
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+    padding: 30px 18px 16px 18px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    border-radius: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+    font-family: var(--font-title, 'Montserrat', sans-serif) !important;
+}
+
+/* 9. Why Choose Us (Elevated Cards) */
+.why-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 22px 18px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.why-card:hover {
+    border-color: #007673 !important;
+    transform: translateY(-5px) !important;
+    box-shadow: 0 12px 28px rgba(0, 118, 115, 0.12) !important;
+}
+
+.why-img {
+    width: 64px !important;
+    height: 64px !important;
+    border-radius: 50% !important;
+    background: #e6f4ea !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 14px auto !important;
+}
+
+.why-img img {
+    width: 36px !important;
+    height: 36px !important;
+    object-fit: contain !important;
+}
+
+.why-des h3 {
+    color: #007673 !important;
+    font-size: 14.5px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    text-transform: uppercase !important;
+}
+
+/* Fix hotline position in Why Right */
+.why-right {
+    position: relative !important;
+    border-radius: 16px !important;
+    overflow: visible !important;
+}
+
+@media (max-width: 991px) {
+    .why-right .why-contact {
+        position: relative !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        margin-top: 20px !important;
+        width: 100% !important;
+    }
+}
+
+/* 10. Specialties Section */
+.chuyen-khoa {
+    background: linear-gradient(180deg, #f8fafc 0%, #edf7f5 100%) !important;
+    border-top: 1px solid #edf2f7 !important;
+    border-bottom: 1px solid #edf2f7 !important;
+}
+
+.specialty-item {
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 24px 18px !important;
+    box-shadow: 0 6px 20px rgba(0, 77, 64, 0.05) !important;
+    border: 1px solid #e0f2fe !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    height: 100% !important;
+}
+
+.specialty-item:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 14px 30px rgba(0, 118, 115, 0.15) !important;
+    border-color: #007673 !important;
+}
+
+.specialty-item figure {
+    width: 74px !important;
+    height: 74px !important;
+    border-radius: 50% !important;
+    background: #e6f4ea !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 16px auto !important;
+    transition: transform 0.3s ease !important;
+}
+
+.specialty-item:hover figure {
+    transform: scale(1.08) !important;
+    background: #ccfbf1 !important;
+}
+
+.specialty-item figure img {
+    width: 44px !important;
+    height: 44px !important;
+    object-fit: contain !important;
+}
+
+.specialty-item h3 {
+    color: #007673 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+/* 11. Equipment Gallery Bottom Breathing Room */
+.device-gallery {
+    padding-bottom: 70px !important;
+}
+
+.device-gallery a {
+    display: block !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease !important;
+}
+
+.device-gallery a:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 14px 32px rgba(0, 118, 115, 0.18) !important;
+}
+
+.device-gallery img {
+    border-radius: 16px !important;
+    transition: transform 0.4s ease !important;
+    width: 100% !important;
+}
+
+.device-gallery a:hover img {
+    transform: scale(1.05) !important;
+}
+
+.about-single-img { margin: 0 auto !important; max-width: 100% !important; border-radius: 18px !important; overflow: hidden !important; box-shadow: 0 12px 32px rgba(0, 118, 115, 0.12) !important; }
+.about-single-img img { width: 100% !important; height: auto !important; display: block !important; border-radius: 18px !important; }
+
+/* Why Contact Banner Styling */
+.why-contact-banner { background: linear-gradient(135deg, #00877a 0%, #006d62 100%) !important; border-radius: 16px !important; padding: 16px 28px !important; box-shadow: 0 10px 25px rgba(0, 109, 98, 0.28) !important; border: 2px solid rgba(255, 255, 255, 0.25) !important; display: inline-flex !important; align-items: center !important; gap: 16px !important; transition: transform 0.3s ease, box-shadow 0.3s ease !important; }
+.why-contact-banner:hover { transform: translateY(-3px) !important; box-shadow: 0 14px 32px rgba(0, 109, 98, 0.38) !important; }
+.why-contact-banner a { color: #ffffff !important; text-decoration: none !important; }
+.why-contact-banner a:hover { text-decoration: underline !important; }
+
+
+/* 8. Why Choose Us Section - Exactly Matched to Specialty Cards */
+.speciality-list {
+    width: 100% !important;
+}
+
+.why-card {
+    background: #ffffff !important;
+    border: 1px solid #e0f2fe !important;
+    border-radius: 16px !important;
+    padding: 24px 18px !important;
+    box-shadow: 0 6px 20px rgba(0, 77, 64, 0.05) !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 200px !important;
+}
+
+.why-card:hover {
+    border-color: #007673 !important;
+    transform: translateY(-6px) !important;
+    box-shadow: 0 14px 30px rgba(0, 118, 115, 0.15) !important;
+}
+
+.why-card .why-img {
+    width: 74px !important;
+    height: 74px !important;
+    border-radius: 50% !important;
+    background: #e6f4ea !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 16px auto !important;
+    transition: transform 0.3s ease !important;
+}
+
+.why-card:hover .why-img {
+    transform: scale(1.08) !important;
+    background: #ccfbf1 !important;
+}
+
+.why-card .why-img img {
+    width: 44px !important;
+    height: 44px !important;
+    object-fit: contain !important;
+}
+
+.why-card .why-des h3 {
+    color: #007673 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.45 !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+}
+
+
+
+/* Section Subtitle Badge - Prominent Uppercase Pill */
+.subtitle,
+p.subtitle {
+    display: inline-block !important;
+    background: #e6f7f5 !important;
+    color: #007673 !important;
+    border: 1px solid rgba(0, 118, 115, 0.25) !important;
+    padding: 6px 20px !important;
+    border-radius: 50px !important;
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 12px !important;
+    box-shadow: 0 2px 8px rgba(0, 118, 115, 0.08) !important;
+    transition: all 0.25s ease !important;
+}
+
+.subtitle:hover,
+p.subtitle:hover {
+    background: #ccfbf1 !important;
+    border-color: #007673 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 118, 115, 0.15) !important;
+}
+
+
+
+/* Hero Single Banner Image (No Carousel) */
+.hero-single-banner {
+    width: 100% !important;
+}
+
+.hero-banner-figure {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 32px rgba(0, 118, 115, 0.14) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    margin: 0 !important;
+}
+
+.hero-banner-figure:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 16px 36px rgba(0, 118, 115, 0.2) !important;
+}
+
+.hero-banner-figure img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 18px !important;
+    object-fit: cover !important;
+}
+
+
+
+/* Fixed Top Marquee Bar - Permanently stationary when scrolling */
+.marquee-container {
+    background: #007673 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding: 6px 0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1050 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
+    height: 35px !important;
+    box-sizing: border-box !important;
+}
+
+.menu-destop {
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 77, 64, 0.06) !important;
+    padding-top: 35px !important;
+    position: relative !important;
+    z-index: 990 !important;
+}
+
+@media (max-width: 991px) {
+    .menu-mobile {
+        top: 35px !important;
+    }
+    body {
+        padding-top: 35px !important;
+    }
+}
+
+
+
+/* Hero Medical Slider */
+#heroMedicalCarousel {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 32px rgba(0, 118, 115, 0.14) !important;
+    position: relative !important;
+}
+
+#heroMedicalCarousel .carousel-item img {
+    border-radius: 18px !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    aspect-ratio: 1024 / 682 !important;
+    display: block !important;
+}
+
+#heroMedicalCarousel .carousel-indicators [data-bs-target] {
+    width: 24px !important;
+    height: 4px !important;
+    border-radius: 4px !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+#heroMedicalCarousel .carousel-indicators .active {
+    width: 36px !important;
+    background-color: #007673 !important;
+}
+
+#heroMedicalCarousel .carousel-control-prev-icon,
+#heroMedicalCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 118, 115, 0.7) !important;
+    border-radius: 50% !important;
+    width: 38px !important;
+    height: 38px !important;
+    background-size: 55% 55% !important;
+    transition: all 0.25s ease !important;
+}
+
+#heroMedicalCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
+#heroMedicalCarousel .carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #007673 !important;
+    transform: scale(1.1) !important;
+}
+
+
+
+/* Absolute Fixed Top Marquee - Attached to Viewport */
+.marquee-container {
+    background: #007673 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding: 6px 0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 99999 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18) !important;
+    height: 35px !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    padding-top: 35px !important;
+}
+
+.menu-destop {
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 77, 64, 0.06) !important;
+    position: relative !important;
+    z-index: 900 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    filter: none !important;
+    padding-top: 0 !important;
+}
+
+@media (max-width: 991px) {
+    .menu-mobile {
+        top: 35px !important;
+    }
 }
 

@@ -1,65 +1,99 @@
 @{
-    ViewData["Title"] = "Phòng Khám Đa Khoa MINDLAB BẾN TRE - Trang chủ";
+    ViewData["Title"] = "Cơ Sở MINDLAB BẾN TRE - Trang chủ";
 }
 
 <section class="container-fluid py-3" id="banner">
     <div class="row align-items-center g-4 mx-0">
         <div class="col-12 col-lg-7">
-            <div id="fullscreenCarousel" class="carousel slide container" role="region" aria-label="Banner chính" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <figure class="carousel-item active">
-                        <img src="/images/banner/banner-pkdksh.webp" class="d-block w-100" alt="Phòng Khám Đa Khoa MINDLAB Bến Tre">
-                        <figcaption class="visually-hidden">Phòng Khám Đa Khoa MINDLAB Bến Tre</figcaption>
-                    </figure>
-                    <figure class="carousel-item">
-                        <img src="/images/banner/banner-pkdksh.jpg" class="d-block w-100" alt="Dịch Vụ Y Tế Chất Lượng Cao MINDLAB Bến Tre">
-                        <figcaption class="visually-hidden">Dịch Vụ Y Tế Chất Lượng Cao MINDLAB Bến Tre</figcaption>
-                    </figure>
-                    <figure class="carousel-item">
-                        <img src="/images/banner/nurse.webp" class="d-block w-100" alt="Đội ngũ y bác sĩ tận tâm MINDLAB Bến Tre">
-                        <figcaption class="visually-hidden">Đội ngũ y bác sĩ tận tâm MINDLAB Bến Tre</figcaption>
-                    </figure>
+            <div id="heroMedicalCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators mb-2">
+                    <button type="button" data-bs-target="#heroMedicalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Tiếp đón &amp; Tư vấn"></button>
+                    <button type="button" data-bs-target="#heroMedicalCarousel" data-bs-slide-to="1" aria-label="Khám bệnh chuyên khoa"></button>
+                    <button type="button" data-bs-target="#heroMedicalCarousel" data-bs-slide-to="2" aria-label="Xét nghiệm kỹ thuật cao"></button>
                 </div>
-                <nav class="carousel-controls" aria-label="Điều khiển banner">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev" aria-label="Trước">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="next" aria-label="Sau">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </nav>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="/images/banner/hero-slide-1-tiep-don.jpg" class="d-block w-100" alt="Tiếp đón và tư vấn bệnh nhân tận tâm tại Cơ Sở MINDLAB Bến Tre">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="/images/banner/hero-slide-2-kham-benh.jpg" class="d-block w-100" alt="Bác sĩ chuyên khoa giàu kinh nghiệm thăm khám tại Cơ Sở MINDLAB Bến Tre">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="/images/banner/hero-slide-3-xet-nghiem.jpg" class="d-block w-100" alt="Xét nghiệm kỹ thuật cao nhanh chóng chuẩn xác tại Cơ Sở MINDLAB Bến Tre">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroMedicalCarousel" data-bs-slide="prev" aria-label="Hình trước">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroMedicalCarousel" data-bs-slide="next" aria-label="Hình tiếp theo">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
 
         </div>
         <div class="col-12 col-lg-5">
             <div class="about-us-title">
-                <h1 class="title mt-2" style="font-size: 2.5rem">
-                    Phòng Khám Đa Khoa <br />
-                    <span class="primary1">MINDLAB</span> <span class="primary2">BẾN TRE</span>
+                <h1 class="title mt-2" style="font-size: 2.2rem; font-weight: 800;">
+                    <span class="primary1" style="color: #007673;">MINDLAB</span> <span class="primary2" style="color: #c0392b;">BẾN TRE</span>
                 </h1>
 
             </div>
-            <div class="">
-                <p>Thành lập từ tháng 07/2010, Phòng Khám Đa Khoa MINDLAB BẾN TRE không ngừng phát triển nhờ sự đoàn kết, tâm huyết của đội ngũ y bác sĩ. Với phương châm “Vì sức khỏe cộng đồng”, phòng khám luôn nỗ lực mang đến dịch vụ tốt nhất với chi phí hợp lý.</p>
+            <div class="hero-intro">
+                <p style="font-size: 15px; line-height: 1.7; color: #475569; margin-bottom: 16px;">
+                    Thành lập từ tháng 07/2010, <strong>Cơ Sở MINDLAB BẾN TRE (Phòng Khám &amp; Xét Nghiệm 224)</strong> tự hào là điểm tựa chăm sóc sức khỏe tin cậy của người dân Bến Tre. Với phương châm <em>“Vì sức khỏe cộng đồng – Tận tâm – Chuẩn xác – Hiệu quả”</em>, chúng tôi không ngừng nâng cao chất lượng dịch vụ y tế toàn diện với mức chi phí minh bạch, hợp lý nhất.
+                </p>
 
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                    Đội ngũ gồm các trưởng khoa, bác sĩ giàu kinh nghiệm từ các bệnh viện lớn, tốt nghiệp chính quy tại các trường Đại học Y Dược uy tín trong và ngoài nước.
-                </p>
-                
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                    Trang thiết bị y khoa hiện đại, tiên tiến, hỗ trợ chẩn đoán & điều trị nhanh chóng, chính xác, hiệu quả.
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                    Được Sở Y tế Tỉnh Bến Tre cấp phép khám sức khỏe định kỳ cho doanh nghiệp, khám sức khỏe lái xe, bảo hiểm y tế, và các dịch vụ y tế khác.
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                    Chuyên khoa mũi nhọn: Khám chữa bệnh Nội tổng hợp, Xét nghiệm kỹ thuật cao và Nhà thuốc đạt chuẩn GPP.
-                </p>
-               
+                <div class="hero-info-list">
+                    <div class="hero-info-item">
+                        <span class="hero-info-bullet"></span>
+                        <div class="hero-info-text">
+                            <strong>Đội ngũ bác sĩ chuyên môn cao:</strong> Các bác sĩ giàu kinh nghiệm, từng công tác tại các bệnh viện lớn, đào tạo chuyên sâu chính quy từ các trường Đại học Y Dược uy tín hàng đầu.
+                        </div>
+                    </div>
+                    <div class="hero-info-item">
+                        <span class="hero-info-bullet"></span>
+                        <div class="hero-info-text">
+                            <strong>Xét nghiệm kỹ thuật cao &amp; Tầm soát toàn diện:</strong> Hệ thống máy xét nghiệm sinh hóa, miễn dịch, huyết học tự động hiện đại, hỗ trợ tầm soát bệnh lý, cho kết quả nhanh chóng và chuẩn xác tuyệt đối.
+                        </div>
+                    </div>
+                    <div class="hero-info-item">
+                        <span class="hero-info-bullet"></span>
+                        <div class="hero-info-text">
+                            <strong>Chẩn đoán hình ảnh tiên tiến:</strong> Trang bị máy siêu âm màu 4D/Doppler, đo điện tim, nội soi tai mũi họng – tiêu hóa, phục vụ khám chữa bệnh kỹ lưỡng và theo dõi điều trị hiệu quả.
+                        </div>
+                    </div>
+                    <div class="hero-info-item">
+                        <span class="hero-info-bullet"></span>
+                        <div class="hero-info-text">
+                            <strong>Khám sức khỏe chính quy được cấp phép:</strong> Được Sở Y tế cấp phép khám sức khỏe định kỳ cho doanh nghiệp, khám sức khỏe lái xe, bảo hiểm y tế và các gói khám theo yêu cầu.
+                        </div>
+                    </div>
+                    <div class="hero-info-item">
+                        <span class="hero-info-bullet"></span>
+                        <div class="hero-info-text">
+                            <strong>Nhà thuốc đạt chuẩn GPP:</strong> Cung ứng đầy đủ các loại thuốc chất lượng cao, nguồn gốc rõ ràng, giá niêm yết công khai, có dược sĩ tư vấn sử dụng thuốc an toàn, đúng phác đồ.
+                        </div>
+                    </div>
+                    <div class="hero-info-item">
+                        <span class="hero-info-bullet"></span>
+                        <div class="hero-info-text">
+                            <strong>Dịch vụ tận tâm – Thủ tục nhanh gọn:</strong> Quy trình tiếp đón ân cần, không gian sạch sẽ thoáng mát, phục vụ liên tục từ 07:00 – 17:30 tất cả các ngày trong tuần (kể cả Thứ 7, Chủ Nhật và ngày Lễ).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group d-flex flex-wrap gap-3 mt-4">
+                    <a href="/lien-he" class="btn btn-hero-primary px-4 py-2 fw-bold" style="background-color: #007673 !important; color: #ffffff !important; border-radius: 50px; font-weight: 700 !important; box-shadow: 0 4px 14px rgba(0,118,115,0.35); text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        <span style="color: #ffffff !important; font-weight: 700 !important;">Đặt Lịch Khám</span>
+                    </a>
+                    <a href="tel:02753812659" class="btn btn-hero-secondary px-4 py-2 fw-bold" style="border: 2px solid #007673 !important; color: #007673 !important; background-color: #ffffff !important; border-radius: 50px; font-weight: 700 !important; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#007673" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span style="color: #007673 !important; font-weight: 700 !important;">Hotline Tư Vấn</span>
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -72,7 +106,7 @@
                 <!-- Heading -->
                 <div class="about-us-title">
                  
-                    <p class="subtitle">Về Chúng Tôi</p>
+                    <p class="subtitle">VỀ CHÚNG TÔI</p>
 
                     <h2 class="title">
                         <span>
@@ -93,35 +127,28 @@
                 <!-- Text -->
 
                 <p class="about-us-text">
-                    <strong>PHÒNG KHÁM ĐA KHOA MINDLAB BẾN TRE</strong>
-                    Với phương châm hoạt động vì sức khỏe cộng đồng, đem lại dịch vụ tốt nhất cho quý khách hàng với mức chi phí hợp lý nhất, PKĐK MINDLAB Bến Tre luôn không ngừng phấn đấu và cải thiện chất lượng dịch vụ từng ngày. Sức khỏe, sự yên tâm và hài lòng của khách hàng là thước đo chính xác nhất cho chất lượng của Phòng Khám Đa Khoa MINDLAB BẾN TRE.
+                    <strong>CƠ SỞ MINDLAB BẾN TRE</strong>
+                    Với phương châm hoạt động vì sức khỏe cộng đồng, đem lại dịch vụ tốt nhất cho quý khách hàng với mức chi phí hợp lý nhất, Cơ Sở MINDLAB Bến Tre luôn không ngừng phấn đấu và cải thiện chất lượng dịch vụ từng ngày. Sức khỏe, sự yên tâm và hài lòng của khách hàng là thước đo chính xác nhất cho chất lượng của Cơ Sở MINDLAB BẾN TRE.
                     <br>
                     <strong>THẦY THUỐC CỦA MỌI NHÀ.</strong>
                 </p>
 
-                <div class="about-us-time">
-                    Giờ làm việc
+                <div class="about-us-time-card">
+                    <div class="time-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+                        Thời Gian Phục Vụ
+                    </div>
+                    <div class="time-val">07:00 – 17:30</div>
+                    <div class="time-sub">Phục vụ liên tục Thứ 2 – Chủ Nhật (kể cả ngày Lễ)</div>
                 </div>
-                <p class="about-us-day">
-                    <time datetime="07:00">07:00</time> – <time datetime="20:00">20:00</time>
-                </p>
-                <span>(Làm việc cả Thứ 7, Chủ Nhật)</span>
                 
             </div>
 
             <div class="col-lg-6">
                 <!-- Image -->
-                <div class="about-us-img">
-                    <figure class="image-1">
-                        <img alt="Siêu âm 4d" loading="lazy" src="/images/banner/sieu-am-4d.png">
-                    </figure>
-
-                    <figure class="image-2">
-                        <img alt="Khám bệnh chuyên khoa" loading="lazy" src="/images/banner/kham-benh-cac-chuyen-khoa.png">
-                    </figure>
-
-                    <figure class="image-3">
-                        <img alt="Xông khí dung" loading="lazy" src="/images/banner/xong-khi-dung.png">
+                <div class="about-us-img text-center">
+                    <figure class="about-single-img" style="margin: 0 auto; max-width: 100%; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 32px rgba(0, 118, 115, 0.12);">
+                        <img alt="Khám bệnh chuyên khoa" loading="lazy" src="/images/banner/kham-benh-cac-chuyen-khoa.png" style="width: 100%; height: auto; display: block; border-radius: 18px;">
                     </figure>
                 </div>
             </div>
@@ -131,13 +158,13 @@
     <div class="container">
         <div class="row justify-content-center text-md-center mb-10">
             <div class="service-heading">     
-                <p class="subtitle">Dịch Vụ</p>
+                <p class="subtitle">DỊCH VỤ</p>
                 <h2 class="title">
                         Dịch Vụ Tại
                     <span class="primary1">MINDLAB</span> <span class="primary2">BẾN TRE</span>
                 </h2>
                 <div class="paragraph" style="">
-                    Phòng Khám Đa Khoa MINDLAB BẾN TRE giúp bệnh nhân nhanh chóng tìm ra căn nguyên của bệnh và điều trị dứt điểm.
+                    Cơ Sở MINDLAB BẾN TRE giúp bệnh nhân nhanh chóng tìm ra căn nguyên của bệnh và điều trị dứt điểm.
                 </div>          
             </div>
         </div>
@@ -165,91 +192,83 @@
         </div>
     </div>
 
-    <div class="container py-5">
-        <div class="row">
+    <div class="container py-5 choose-us-section">
+        <div class="row align-items-center mb-4">
             <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
                 <div class="why-heading">                 
-                    <p class="subtitle">Lựa chọn dành cho bạn</p>
+                    <p class="subtitle">LỰA CHỌN DÀNH CHO BẠN</p>
 
-                    <h2 class="title">
-                        Tại sao bạn nên chọn<br>
-                        Phòng Khám <span class="primary1">MINDLAB</span> <span class="primary2">BẾN TRE</span>?
+                    <h2 class="title" style="font-weight: 800; font-size: 28px; line-height: 1.35; margin-bottom: 8px;">
+                        Tại sao bạn nên chọn<br><span class="primary1" style="color: #007673;">CƠ SỞ MINDLAB</span> <span class="primary2" style="color: #c0392b;">BẾN TRE</span>?
                     </h2>
 
-                    <div class="">Với phương châm "Vì sức khỏe cộng đồng", chúng tôi cam kết sẽ mang lại những trải nghiệm tốt nhất!</div>
-                </div>
-
-                <div class="row row-cols-2 row-cols-md-2 speciality-list">
-                    <div class="col mb-3">
-                        <div class="why-card">
-                            <div class="why-img">
-                                <img src="/images/icon/icon-bac-si.png" alt="Bác sĩ chuyên khoa nhiều kinh nghiệm" >
-                            </div>
-
-                            <div class="why-des">
-                                <h3>BÁC SĨ CHUYÊN KHOA <br> NHIỀU KINH NGHIỆM</h3>
-                            </div>  
-                        </div>
-                    </div>
-
-                    <div class="col mb-3">
-                        <div class="why-card">
-                            <div class="why-img">
-                                <img src="/images/icon/dich-vu-chat-luong-an-toan.png" alt="Dịch vụ chất lượng an toàn hiệu quả">
-                            </div>
-
-                            <div class="why-des">
-                                <h3>DỊCH VỤ <br> TỐT - AN TOÀN – HIỆU QUẢ</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-3">
-                        <div class="why-card">
-                            <div class="why-img">
-                                <img src="/images/icon/dia-chi-kham-benh-uy-tin-an-toan.png" alt="Địa chỉ khám bệnh uy tín">
-                            </div>
-
-                            <div class="why-des">
-                                <h3>ĐỊA CHỈ KHÁM CHỮA BỆNH <br> UY TÍN, TIN CẬY</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-3">
-                        <div class="why-card">
-                            <div class="why-img">
-                                <img src="/images/icon/luon-tao-dieu-kien-va-chi-phi-hop-li.png" alt="Luôn tạo điều kiện, chi phí hợp lí">
-                            </div>
-
-                            <div class="why-des">
-                                <h3>LUÔN TẠO ĐIỀU KIỆN VÀ <br> MỨC CHI PHÍ HỢP LÝ</h3>
-                            </div>
-                        </div>
-                    </div>
-
+                    <div class="text-muted" style="font-size: 15px;">Với phương châm "Vì sức khỏe cộng đồng", chúng tôi cam kết sẽ mang lại những trải nghiệm tốt nhất!</div>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 mb-3">
-                <div class="why-right">
-                    <div class="why-contact">
-                        <img src="/images/icon/phone.png"/>
-                     
-                        <div>
-                            <h3>
-                                Số Hotline
-                            </h3>
-                            <p>
-                                0275 3812 659
-                            </p>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 text-md-end mt-3 mt-md-0">
+                <div class="why-contact-banner d-inline-flex align-items-center gap-3 p-3 px-4 shadow-sm" style="background: linear-gradient(135deg, #007673, #005a58); border-radius: 16px; color: #ffffff;">
+                    <div class="contact-icon-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border-radius: 50%; background: #e74c3c; flex-shrink: 0; box-shadow: 0 4px 10px rgba(231,76,60,0.4);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <div class="text-start">
+                        <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.9);">SỐ HOTLINE</div>
+                        <div style="font-size: 18px; font-weight: 800; white-space: nowrap;">
+                            <a href="tel:02753812659" style="color: #ffffff !important; text-decoration: none;">0275 3812 659</a> <span style="color: rgba(255,255,255,0.7);">–</span> <a href="tel:0983341224" style="color: #ffffff !important; text-decoration: none;">0983 341 224</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="why-card">
+                    <div class="why-img">
+                        <img src="/images/icon/icon-bac-si.png" alt="Bác sĩ chuyên khoa nhiều kinh nghiệm">
+                    </div>
+                    <div class="why-des">
+                        <h3>BÁC SĨ CHUYÊN KHOA <br> NHIỀU KINH NGHIỆM</h3>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="why-card">
+                    <div class="why-img">
+                        <img src="/images/icon/dich-vu-chat-luong-an-toan.png" alt="Dịch vụ chất lượng an toàn hiệu quả">
+                    </div>
+                    <div class="why-des">
+                        <h3>DỊCH VỤ <br> TỐT - AN TOÀN – HIỆU QUẢ</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="why-card">
+                    <div class="why-img">
+                        <img src="/images/icon/dia-chi-kham-benh-uy-tin-an-toan.png" alt="Địa chỉ khám bệnh uy tín">
+                    </div>
+                    <div class="why-des">
+                        <h3>ĐỊA CHỈ KHÁM CHỮA BỆNH <br> UY TÍN, TIN CẬY</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="why-card">
+                    <div class="why-img">
+                        <img src="/images/icon/luon-tao-dieu-kien-va-chi-phi-hop-li.png" alt="Luôn tạo điều kiện, chi phí hợp lí">
+                    </div>
+                    <div class="why-des">
+                        <h3>LUÔN TẠO ĐIỀU KIỆN VÀ <br> MỨC CHI PHÍ HỢP LÝ</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    
 
     <section id="chuyen-khoa" class="chuyen-khoa py-5">
         <div class="container">
@@ -257,19 +276,19 @@
                 <h2 class="titile-header">Các Chuyên Khoa</h2>
             </header>
             <ul class="row d-flex justify-content-center">
-                <li class="col-md-3">
+                <li class="col-lg-3 col-md-6 col-sm-6 mb-4">
                     <article class="specialty-item">
-                        <a href="/">
+                        <a href="/chuyen-khoa">
                             <figure>
-                                <img src="/images/icon/icon-khoa-noi-tong-quat.png" alt="Khoa ngội tổng quát" class="img-fluid">
+                                <img src="/images/icon/icon-khoa-noi-tong-quat.png" alt="Khoa Nội tổng quát" class="img-fluid">
                             </figure>
                             <h3 class="one-line">Nội tổng quát</h3>
                         </a>
                     </article>
                 </li>
-                <li class="col-md-3">
+                <li class="col-lg-3 col-md-6 col-sm-6 mb-4">
                     <article class="specialty-item">
-                        <a href="/">
+                        <a href="/chuyen-khoa">
                             <figure>
                                 <img src="/images/icon/icon-khoa-ngoai.png" alt="Ngoại khoa" class="img-fluid">
                             </figure>
@@ -277,83 +296,23 @@
                         </a>
                     </article>
                 </li>
-                <li class="col-md-3">
+                <li class="col-lg-3 col-md-6 col-sm-6 mb-4">
                     <article class="specialty-item">
-                        <a href="/">
+                        <a href="/chuyen-khoa">
                             <figure>
-                                <img src="/images/icon/icon-tai-mui-hong.png" alt="Khoa tai mũi họng" class="img-fluid">
+                                <img src="/images/icon/icon-ong-nghiem1.png" alt="Nhà thuốc GPP" class="img-fluid">
                             </figure>
-                            <h3>Tai mũi họng</h3>
+                            <h3>Nhà thuốc GPP</h3>
                         </a>
                     </article>
                 </li>
-                <li class="col-md-3">
-        <article class="specialty-item">
-            <a href="/chuyen-khoa">
-                <figure>
-                    <img src="/images/icon/icon-ong-nghiem1.png" alt="Khoa Nhà thuốc GPP" class="img-fluid">
-                </figure>
-                <h3>Nhà thuốc GPP</h3>
-            </a>
-        </article>
-    </li>
-                <li class="col-md-3">
+                <li class="col-lg-3 col-md-6 col-sm-6 mb-4">
                     <article class="specialty-item">
-                        <a href="/">
-                            <figure>
-                                <img src="/images/icon/icon-mat.png" alt="Khoa mắt" class="img-fluid">
-                            </figure>
-                            <h3>Mắt</h3>
-                        </a>
-                    </article>
-                </li>
-                <li class="col-md-3">
-                    <article class="specialty-item">
-                        <a href="/">
-                            <figure>
-                                <img src="/images/icon/icon-da-lieu.png" alt="Khoa da liễu" class="img-fluid">
-                            </figure>
-                            <h3>Da liễu</h3>
-                        </a>
-                    </article>
-                </li>
-                <li class="col-md-3">
-                    <article class="specialty-item">
-                        <a href="/">
-                            <figure>
-                                <img src="/images/icon/icon-san-phu-khoa.png" alt="Sản phụ khoa" class="img-fluid">
-                            </figure>
-                            <h3>Sản phụ khoa</h3>
-                        </a>
-                    </article>
-                </li>
-                <li class="col-md-3">
-                    <article class="specialty-item">
-                        <a href="/">
-                            <figure>
-                                <img src="/images/icon/icon-y-hoc-co-truyen.png" alt="Y học cổ truyền" class="img-fluid">
-                            </figure>
-                            <h3>Y học cổ truyền</h3>
-                        </a>
-                    </article>
-                </li>
-                <li class="col-md-3">
-                    <article class="specialty-item">
-                        <a href="/">
-                            <figure>
-                                <img src="/images/icon/icon-khoa-chuan-doan-hinh-anh.png" alt="Chẩn đoán hình ảnh" class="img-fluid">
-                            </figure>
-                            <h3>Chẩn đoán hình ảnh( Siêu âm, X quang, Nội soi TMH, Soi cổ tử cung)</h3>
-                        </a>
-                    </article>
-                </li>
-                <li class="col-md-3">
-                    <article class="specialty-item">
-                        <a href="/">
+                        <a href="/chuyen-khoa">
                             <figure>
                                 <img src="/images/icon/icon-xet-nghiem.png" alt="Xét nghiệm" class="img-fluid">
                             </figure>
-                            <h3>Xét nghiệm (các xét nghiệm thường quy, tầm soát ung thư)</h3>
+                            <h3>Xét nghiệm</h3>
                         </a>
                     </article>
                 </li>
@@ -364,7 +323,7 @@
     <section id="bac-si" class="py-5">
         <div class="container">
             <div class="service-heading d-flex flex-column align-items-center text-center mb-4">
-                <p class="subtitle" style="color: #0d8a43; font-weight: 700; text-transform: uppercase;">Nhân Sự Y Tế</p>
+                <p class="subtitle">NHÂN SỰ Y TẾ</p>
                 <h2 class="title fw-bold" style="color: #2b3a4a;">
                     Đội Ngũ Bác Sĩ & Nhân Viên Y Tế
                 </h2>
@@ -620,7 +579,7 @@
 
     <section class="device-gallery container py-5">
         <div class="service-heading d-flex flex-column align-items-center ">
-            <p class="subtitle">Cơ Sở Vật Chất</p>
+            <p class="subtitle">CƠ SỞ VẬT CHẤT</p>
             <h2 class="title">
                 Trang Thiết Bị Hiện Đại
             </h2>
