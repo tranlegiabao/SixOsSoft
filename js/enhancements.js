@@ -62,4 +62,38 @@ document.addEventListener('DOMContentLoaded', function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // 3. Doctor Department Filter (.btn-dept-filter)
+    var filterButtons = document.querySelectorAll('.btn-dept-filter');
+    var staffItems = document.querySelectorAll('.staff-item');
+
+    if (filterButtons.length > 0 && staffItems.length > 0) {
+        filterButtons.forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Toggle active state
+                filterButtons.forEach(function (b) {
+                    b.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                var filter = this.getAttribute('data-filter');
+
+                staffItems.forEach(function (item) {
+                    var dept = item.getAttribute('data-dept');
+                    if (filter === 'all' || dept === filter) {
+                        item.style.display = '';
+                        item.style.opacity = '0';
+                        item.style.transition = 'opacity 0.25s ease';
+                        requestAnimationFrame(function () {
+                            item.style.opacity = '1';
+                        });
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
 });
